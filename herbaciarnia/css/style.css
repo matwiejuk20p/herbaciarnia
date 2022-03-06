@@ -1,0 +1,558 @@
+@font-face{
+    font-family: SophiaPro;
+    src: url('../font/Sofia Pro Medium Az.otf');
+}
+body{
+    margin: 0;
+    background-color: #202125;
+    font-family: SophiaPro;
+    color: #FFF;
+}
+nav{
+    width: 100%;
+    height: 110px;
+    background-color: #4C4637;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+i{
+    font-size: 96px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    width:100%;
+    list-style-type: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: 1s;
+}
+li{
+    height: 50px;
+    width: 200px;
+    border-left: 3px solid #B0ABAB;
+    text-align: center;
+    line-height: 50px;
+    transition: 0.5s;
+}
+
+li:hover>a{
+    font-size: 45px;
+    text-decoration: underline;
+}
+a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 36px;
+    transition: 0.5s;
+}
+.hamburber{
+    height: 8px;
+    width: 35px;
+    background-color: #FFF;
+    position: absolute;
+    right: 18px;
+    
+    border-radius: 5px;
+    display: none;
+}
+.hamburber::before{
+    content: '';
+    top: 12px;
+    height: 8px;
+    width: 35px;
+    background-color: #FFF;
+    position: absolute;
+    
+    border-radius: 5px;
+}
+.hamburber::after{
+    content: '';
+    bottom: 12px;
+    height: 8px;
+    width: 35px;
+    background-color: #FFF;
+    position: absolute;
+    
+    border-radius: 5px;
+}
+nav > input[type=checkbox]{
+    display: none;
+}
+.baner{
+    width: 100%;
+}
+.section-baner{
+    position: relative;
+}
+h1{
+    position: absolute;
+    top: 80px;
+    left: 5%;
+    font-size: 96px;
+    color: #FFF;
+}
+h2{
+    position: absolute;
+    right: 5%;
+    bottom: 30px;
+    font-size: 48px;
+    color: #FFF;
+}
+.onas{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    align-items: center;
+
+}
+.kim{
+    font-size: 59px;
+
+}
+.lorem{
+    font-size: 20px;
+    padding-top: 20px;
+}
+.onas > p{
+    width: 40%;
+    text-align: center;
+}
+
+.onas::after{
+    content: ' ';
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 23px;
+    left: 20px;
+    border-left: 3px solid #B0ABAB;
+    border-top: 3px solid #B0ABAB;
+
+}
+.onas::before{
+    content: ' ';
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 20px;
+    bottom: 23px;
+    border-right: 3px solid #B0ABAB;
+    border-bottom: 3px solid #B0ABAB;
+}
+.atyjak{
+    width: 100%;
+    text-align: center;
+    font-size: 65px;
+}
+
+.galeria{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container{
+
+    display: grid;
+    grid-gap: 5px;
+    align-items: center;
+    font-size: 30px;
+    grid-template-areas: 
+    "galeria1 div1 "
+    "div2 galeria2"
+    "galeria3 div3"
+    "div4 galeria4";
+}
+
+.galeria1{
+    grid-area: galeria1;
+    width: 250px;
+    height: 200px;
+    transition: 0.5s;
+}
+.div1{
+    grid-area: div1;
+    text-align: center;
+}
+.div2{
+    grid-area: div2;
+    text-align: center;
+}
+.galeria2{
+    grid-area: galeria2;
+    width: 250px;
+    height: 200px;
+    transition: 0.5s;
+}
+.galeria3{
+    grid-area: galeria3;
+    width: 250px;
+    height: 200px;
+    transition: 0.5s;
+}
+.div3{
+    grid-area: div3;
+    text-align: center;
+}.div4{
+    grid-area: div4;
+    text-align: center;
+}
+.galeria4{
+    grid-area: galeria4;
+    width: 250px;
+    height: 200px;
+    transition: 0.5s;
+}
+.container > img:hover{
+    
+    animation-name: animation;
+	animation-duration: 0.5s;
+	animation-direction: normal;
+	animation-iteration-count:1;
+	animation-timing-function: linear;
+}
+@keyframes animation{
+    20%{
+        transform: scale(1.1);
+    }
+	40%{
+		 transform: rotate(20deg);
+	}
+	60%{
+		 transform: rotate(-20deg);
+	}
+    80%{
+        transform: rotate(20deg);
+    }
+}
+.container > div:hover{
+    
+    animation-name: animation2;
+	animation-duration: 0.5s;
+	animation-direction: normal;
+	animation-iteration-count:1;
+	animation-timing-function: linear;
+}
+@keyframes animation2{
+    20%{
+        transform: scale(1.1);
+    }
+	40%{
+		 transform: translateX(15px);
+	}
+	60%{
+        transform: translateX(-15px);
+	}
+    80%{
+        transform: translateX(15px);
+    }
+}
+.kryska{
+    width: 30%;
+    background-color: #B0ABAB;
+    height: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.poznaj{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 65px;
+}
+.oferta{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.ofertadiv{
+    width: 340px;
+    height: 340px;
+    background-color: #847743;
+    margin: 5px;
+    text-align: center;
+    font-size: 30px;
+}
+.krysyczka{
+    width: 30%;
+}
+.oferta > .ofertadiv > img{
+    width: 90%;
+    height: 220px;
+    margin-top: 15px;
+    transition: 0.5s;
+
+}
+.oferta > .ofertadiv > img~p{
+    display: none;
+}
+.oferta > .ofertadiv:hover>p{
+    display: block;
+
+}
+.oferta > .ofertadiv:hover>div{
+    display: none;
+
+}
+
+.masz{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 55px;
+}
+.formularz{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+textarea {
+    padding: 14px 13px;
+    resize: none;
+    width: 100%;
+    height: 165%;
+    border: 1px solid #606162;
+    background-color: #202125;
+    border-radius: 3px;
+    font-size: 20px;
+    color: #7A7A7A;
+}
+.area{
+    grid-row: 1/ span 2;
+    grid-column: 3;
+}
+input{
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-bottom: 1px solid #606162;
+    background-color: #202125;
+    color: #7A7A7A;
+    font-size: 20px;
+    padding-left: 2px;
+}
+form{
+    
+    display: grid;
+    gap: 20px;
+    align-content: space-between;
+    grid-template-columns: auto auto auto;
+}
+form > div{
+    height: 60px;
+}
+.formdiv input:focus{
+    outline: none;
+    border-color: #B6A587;
+
+}
+.formdiv input:-webkit-autofill{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #FFF;
+}
+.formdiv input:focus~label, .formdiv input:not(:placeholder-shown)~label{
+    font-size: 10px;                                                   
+    transform: translateY(-20px);
+    color: #B6A587;
+}
+.formdiv label{
+    position: absolute;
+    left: 3px;
+    transition: 0.5s;
+    color: #7A7A7A;
+    top: 10px;
+}
+.formularz > form > div{
+    position: relative;
+}
+textarea:focus{
+    outline: none;
+    border-color: #B6A587;
+}
+
+textarea:focus~label, textarea:not(:placeholder-shown)~label{
+    font-size: 10px;                                                   
+    transform: translateY(-25px);
+    color: #B6A587;
+}
+textarea ~ label{
+    left: 10px;
+}
+
+div > label > div {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #7A7A7A;
+    display: inline-flex;
+    justify-content: center;
+    align-items:center ;
+    border-radius: 1px;
+}
+label > div > i{
+    font-size: 11px;
+    visibility: hidden;
+    transition: 0.2s;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+input[type=checkbox]:checked~label>div{
+    
+    border-color:#B6A587;
+}
+input[type=checkbox]:checked~label>div>i{
+    
+    visibility: visible;
+}
+input[type=checkbox]:checked~label{
+    color: #B6A587;
+}
+input[type=checkbox]~label{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #A7A7A7;
+}
+button{
+    height: 30px;
+    width: 120px;
+    border: 1px solid #202125 ;
+    background-color: #606162;
+    color: #FFF;
+    border-radius: 3px;
+    justify-self: flex-end;
+    transition: 0.5s;
+}
+button:hover{
+    border: 1px solid #606162;
+    background-color: #202125;
+    color: #7A7A7A;
+}
+footer{
+    background-color: #4C4637;
+}
+.lowcostea{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 55px;
+}
+footer >div> h3{
+    margin-bottom: 10px !important;
+}
+.kontakt{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 955px){
+    a{
+        font-size: 24px;
+    }
+    li:hover>a{
+    font-size: 30px;
+    }
+    li{
+        width: 120px;
+    }
+    h1{
+        top: 20px;
+        font-size: 10vmax;
+    }
+    h2{
+        font-size: 3vmax;
+        bottom: 20px;
+    }
+    .kim{
+        line-height: 100px;
+    }
+    .lorem{
+        font-size: 16px;
+    }
+    .atyjak{
+        font-size: 60px;
+    }
+    .poznaj{
+        font-size: 60px;
+    }
+    form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    }
+    form > div:nth-child(1){
+        order: 1;
+    }
+    form > div:nth-child(2){
+        order: 2;
+    }
+    form > div:nth-child(3){
+        order: 5;
+        margin-bottom: 60px;
+    }
+    form > div:nth-child(4){
+        order: 3;
+    }
+    form > div:nth-child(5){
+        order: 4;
+    }
+    form > div:nth-child(6){
+        order: 6;
+    }
+    form>button{
+        order: 7;
+    }
+}
+
+@media screen and (max-width: 660px){
+    h1{
+        top: 15px;
+        font-size: 8vmax;
+    }
+    h2{
+        font-size: 3vmax;
+        bottom: 20px;
+    }
+    .hamburber{
+        display: block;
+    }
+    ul{
+        display: block;
+        transform: translateY(-200px);
+        transition: 0.5s;
+    }
+    nav > input:checked~ul{
+    display:block;
+    position: absolute;
+    z-index: 4;
+    top: 100px;
+    background-color: #4C4637;
+    transform: translateY(0);
+    }
+    li{
+        display: block;
+        width: 100%;
+        border: none;
+
+    }
+    li:hover{
+        background-color:#918669;
+    }
+    .kim{
+        line-height: 50px;
+        font-size: 30px;
+    }
+    .lorem{
+        font-size: 13px;
+    }
+}
